@@ -17,26 +17,26 @@ function generateQuestion() {
   if (questionNumber <= STORE.length) {
   return `<div class="js-question-group">
             <form>
-            <fieldset>
+            <fieldset id="radio_label">
               <legend>${STORE[questionNumber - 1].question}</legend>
               
               <div class="questionOption">
-              <input id="answer1" type="radio" value="${STORE[questionNumber - 1].answers[0]}" name="answer" required tabindex="0">
+              <input id="answer1" type="radio" value="${STORE[questionNumber - 1].answers[0]}" name="answer" required tabindex="0" aria-labelledby="radio_label">
               <label for="answer1">${STORE[questionNumber - 1].answers[0]}</label>
               </div>
              
              <div class="questionOption">
-              <input id="answer2" type="radio" value="${STORE[questionNumber - 1].answers[1]}" name="answer" required tabindex="0">
+              <input id="answer2" type="radio" value="${STORE[questionNumber - 1].answers[1]}" name="answer" required tabindex="0" aria-labelledby="radio_label">
               <label for="answer2">${STORE[questionNumber - 1].answers[1]}</label>
               </div>
               
               <div class="questionOption">
-              <input id="answer3" type="radio" value="${STORE[questionNumber - 1].answers[2]}" name="answer" required tabindex="0">
+              <input id="answer3" type="radio" value="${STORE[questionNumber - 1].answers[2]}" name="answer" required tabindex="0" aria-labelledby="radio_label">
               <label for="answer3">${STORE[questionNumber - 1].answers[2]}</label>
               </div>
               
               <div class="questionOption">
-              <input id="answer4" type="radio" value="${STORE[questionNumber - 1].answers[3]}" name="answer" required tabindex="0">
+              <input id="answer4" type="radio" value="${STORE[questionNumber - 1].answers[3]}" name="answer" required tabindex="0" aria-labelledby="radio_label">
               <label for="answer4">${STORE[questionNumber - 1].answers[3]}</label>
               </div>
               
